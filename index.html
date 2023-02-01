@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Monoton&display=swap" rel="stylesheet">
+    <title>Pole Ver.2</title>
+    <script type="text/javascript" src="./pole.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD799uZafVwxUn6GH_17UkCv5JfadBG9mY&callback=initMap">
+    </script>
+</head>
+
+<body>
+    
+    <div class="navigation">
+        <ul>
+            <li><a href="#about_section" class="nav_button" onclick="navButtonHighlight(0)">About</a></li>
+            <li><a href="#coaches_section" class="nav_button" onclick="navButtonHighlight(1)">Coaches</a></li>
+            <li><a href="#classes_desc_section" class="nav_button" onclick="navButtonHighlight(2)">Classes</a></li>
+            <li><a href="#schedule" class="nav_button" onclick="navButtonHighlight(3)">Schedule</a></li>
+            <li><a href="#contacts_section" class="nav_button" onclick="navButtonHighlight(4)">Contacts</a></li>
+        </ul>
+    </div>
+    
+
+    <!-- title section -->
+     
+    <div class="title" id="title_section">
+        
+        <div id="logo_image">
+        <img src="124838955_217213673080177_1622517917604221029_o-removebg-preview.png" alt="logo" />
+        </div>
+
+        <div id="social">
+            <a href="https://www.facebook.com/Pommade-Pole-Dance-studio-107249337409945" target="_blank"><img id="facebook" src="face.png" alt="facebook icon"/></a>
+            <a href="https://www.instagram.com/pommade_poledance/" target="_blank"><img id="insta" src="insta.png" alt="instagram icon"/></a>
+        </div>
+
+    </div>
+    <!-- about section -->
+    <div class="about" id="about_section">
+       <div class="about_section_container">
+       <div id="slide_container">
+           <div class="slide">
+            <p><strong>Pommade Pole dance studio</strong> piedāvā jums lielisku un optimālu risinājumu, 
+                kā var patiešām mīlēt sporta nodarbības — baudot procesu un priecājoties no sasniegtajiem rezultātiem! 
+                Pavisam drīz jūs sapratīsiet, ka sporta nodarbības ne tikai padara jūs spēcīgākus un veselīgākus,
+                 bet arī patiešām spēj pacelt garastāvokli un uzlabot domāšanas procesu!</p>
+           </div>
+           <div class="slide">
+            <p>Deju nodarbībās tiek uzlabota jūsu plastika, kas arī palīdz labāk sajust savu ķermeni. 
+                Deja ir grācija, unikālā ķermeņa valoda un meditācija, kas spēj izteikt jūsu individualitāti, 
+                radot skaistumu kustībās. Plastika ir ne tikai tas, kā jūs dejojat, bet arī kā jūs kustaties katru dienu, kā pasniedzat sevi ikdienas dzīvē. 
+                Ķermeņa plastika ir jūsu psiholoģiskās elastības atspoguļojums, 
+                tāpēc būt plastiskam nozīmē būt arī pievilcīgam un veiksmīgam!</p> 
+           </div>
+           
+           <div class="slide">
+            <p>Pommade studijas komanda pieejamajās sporta nodarbībās dalīsies ar savu mīlestību uz attīstību, 
+                jaunām zināšanām un jaunradi. 
+                Esiet plastiski, disciplinēti un lokani, sportojot kopā ar mums!</p>
+           </div>
+       
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+       <div class="points_container">
+           <span class="point" onclick="currentSlide(1)"></span>
+           <span class="point" onclick="currentSlide(2)"></span>
+           <span class="point" onclick="currentSlide(3)"></span>
+           
+       </div>
+    </div>
+    </div>
+
+    <!-- coaches section -->
+    <div id="coaches_section">
+    <div class="coaches">
+        <div class="coach">
+            <div id="coach_photo">
+               <a onclick="showCoachText(0)"> <img class="coach_img" src="23305470.jpg" alt="cartoon_face" /></a>
+            </div>
+        <div id="coach_info">
+        
+            <p>Alexandra</p>
+            
+        
+        </div>
+    </div>
+
+    <div class="coach">
+        <div id="coach_photo">
+            <a onclick="showCoachText(1)"><img class="coach_img" src="23305470.jpg" alt="cartoon_face" /></a>
+        </div>
+    <div id="coach_info">
+
+        <p>Inna</p>
+        
+    
+    </div>
+</div>
+    </div>
+<!-- coach info section-->
+    <div id="coach_texts">
+        <div  class="coach_txt">
+        <p> <strong>Alexandra</strong> uzsāka savu sporta ceļu jau agrā bērnībā. 
+            Viņa apguva un nodarbojās ar tekvondo cīņas mākslu. 
+            Ilgi un mērķtiecīgi trenējoties, viņa sacensībās spēja iegūt daudz uzvaras, kā arī iegūt melno jostu. 
+            Deviņus gadus Aleksandra strādāja par tekvondo pasniedzēju, pa to laiku pabeidzot studijas universitātē un apgūstot treneru kursus. 
+            Ar Pole dance Alexandra sāka nodarboties 25 gadu vecumā. 
+            Līdz tam viņa jau bija mēģinājusi dažādus deju stilus — Dance of Street deju studijā tīņu gados un Tribal fusion dance jau vēlāk. 
+            Tomēr tieši dejās ar pilonu Alexandra iemīlējusies no pirmās nodarbības. 
+            Jau pirmajā gadā viņa sāka uzstāties uz skatuves un piedalīties Pole dance sacensībās. 
+            Alexandra joprojām regulāri piedalās gan sacensībās, gan pasākumos un koncertos, mēģinot vienādi attīstīties gan Exotic Pole Dance, gan Pole Dance Art stilos. 
+            2018. gadā “Pole Performance” sacensībās, kuras tika organizētas Skotijā, Alexandra ieguva pirmo vietu.
+        </p>
+        
+    </div>
+    <div  class="coach_txt">
+        <p> <strong>Inna</strong> ar Pole dance sāka nodarboties kopš 2016.gada vasaras. 
+            To, ka šis sporta veids ir tas, ar ko grib sevi pilnveidot, saprata jau pēc pirmās nodarbības. 
+            No sākuma apmeklēja triku nodarbības, ar Pole dance exotic sāka nodarboties vēlāk. 
+            Pirms tam vidusskolā nodarbojās ar vēderdējām. Pēc skolas absolvēšanas ar dejām bija jāiepauzē studiju dēļ. 
+            2012. gadā absolvēja RSU rehabilitācijas fakultāti. 
+            Inna ir sertificēta fizioterapeite un labi zina, kā pareizi uztrenēt cilvēkus ar dažādu fizisko sagatavotību. 
+            Paralēli darbam ar pacientiem un sportu, Inna ir uguns un gaismas šova grupas „Studio Fotia” dalībniece kopš 2016. gada un regulāri uzstājas dažādos pasākumos. 
+            Ar skatuvi pazīstama jau sen, skolas laikā apmeklēja teatrālo pulciņu un uzstājās dažādos uzvedumos, arī tagad turpina apmeklēt Ivara Brakovska aktiermeistarības klases. 
+            Regulāri apmeklē dažādas deju nodarbības, mēģinot sevi tādos deju stilos, kā laikmetīgā deja, tverks un lady style.</p>
+            <p>2018. gada finaliste „Pole Emotions” art amateur nominācija, Latvijā</p>
+            <p>2019. gada finaliste „Zodiac”exotic pole dance beginners category, Maskavā</p>
+            <p>2019. gada finaliste „Pole angels” exotic pole dance amateur category, Minskā</p>
+            <p>2019.gada 2. vietas ieguvēja „Pole Emotions” exotic pole dance amateur category, Latvijā</p>
+            
+        </div>
+    </div>
+    <!--coach info section end-->
+    </div>
+    
+    <!-- classes section --> 
+<div id="classes_desc_section">
+    <div  class="classes_description">
+
+        <a onclick="showClassesText(0)"><div style="background-image: url('exotic_icon_v4.png');"></div></a>
+        <a onclick="showClassesText(1)"><div style="background-image: url('tricks_icon_v5.png');"></div></a>
+        <a onclick="showClassesText(2)"><div style="background-image: url('stretching_icon_v5.png');"></div></a>
+           
+    </div>  
+</div>
+    <div class="classes_texts">
+        <div class="classes_txt">
+            <h1>Exotic Pole Dance</h1> <p> tas ir Pole Dance virziens ar uzsvaru uz dejas daļu, kas tiek izpildīta augstpapēžu kurpēs (high heels). 
+            Exotic Pole Dance —  tā ir sievišķīga un seksīga deja, kura var būt gan lēna un jutekliska (exotic flow), gan ātra un lecīga (exotic hard). Salīdzinoši ar Pole dance nodarbībām, kur visus elementus izpilda ar basām kājām un uzsvars tiek likts vairāk uz trikiem un spēka vingrinājumiem, Exotic Pole Dance treniņos uzsvars ir uz deju kombināciju apmacību, kas sakrīt ar kardio slodzi un ir arī lielisks veids kā notievēt! Exotic Pole Dance ļauj atvert sevī dažādas sievišķīgas puses, justies pārliecinātai par sevi un drosmīgai, nebaidoties no savas seksualitātes.
+            Exotic Pole Dance nodarbības var būt brīnišķīgs veids lai padarīt jūsu slodzi par daudzveidīgu, trenējot izturību, plastiku un līdz ar to tievēt! Ja jūs meklējat veidu, kā jums notievēt, bet negribat iet uz sporta zāli tad šīs nodarbības ir piemērotas jums!
+            Sākt nodarboties ar Exotic Pole Dance var ar jebkuru sagatavotības līmeni, ar vai bez iepriekšejās pieredzes dejās. Tievēt negad nav bijis tik aizraujoši!
+        </p>
+        </div>
+        <div class="classes_txt">
+            <h1>Pole dance</h1> 
+            <p> tas ir mūsdienu dejas virziens, kurā akrobātisko triku estētika kopā ar dejas emocionalitāti un jutekliskumu apvieno sevī gan mākslu, gan sportu! 
+Pole Dance, jeb deja uz pilona, var būt ļoti dažāda, tāpēc ikviens tajā atradīs kaut ko sev tuvu. Kāds būs vairāk ieinteresēts akrobātikā uz pilona —  spēka triku apgūšanā. Šādas nodarbības var interesēt ne tikai sievietes, bet arī vīriešus. Dažiem var būt tuvāka lokanības un plastiskas attīstīšana. Bet kādam var kļūt tuvāk arī dejiskākais virziens —  Exotic Pole Dance (high heels).
+Pole dance treniņos tiek iedarbināti visa ķermeņa muskuļu grupas, tāpēc jūs varēsiet aizmirst par garlaicīgām nodarbībām sporta zālē un baudīt nodarbības uz pilona, vienlaikus zaudējot svaru!
+Pole Dance ir prieks, skaistums, spēks, plastika un grācija! Šis virziens noteikti ir piemērots tiem, kam patīk izaicināt sevi, pastāvīgi attīstīties, radīt un baudīt mākslas estētiku. Ir labi zināms, ka deja ir arī lieliska un neaizstājama psihoterapijas metode, pēc kuras dvēsele kļūst viegla un dzīvespriecīga. Jūs varat izmēģināt Pole Dance virzienu ar jebkuru fiziskās sagatavotības līmeni, jo treniņa laikā ķermenis tiek pakāpeniski uztrenēts lai izpildītu triku elementus. 
+    </p>    
+    </div>
+        <div class="classes_txt">
+            <h1>Stretching</h1>
+            <p>
+            Elastības un lokanības attīstība ir noderīga jebkurā vecumā un jebkurā izpausmē. 
+            To jums palīdzēs attīstīt Pommade stiepšanas nodarbības (strečings). 
+            Plastika savienojumā ar lokanību var radīt patiešām brīnumainu estētiku un baudu! 
+            Būt lokanam nozīmē spēt salocīties tā, lai vienmēr varat atrast izeju no jebkuras situācijas!
+        </p>
+        </div>
+    </div>
+    <div id="schedule">
+    <div id="schedule_section">
+        <div class="left">
+    <table>
+        <tbody>
+            <tr>
+                <td>time</td>
+                <td>monday</td>
+                <td>wednesday</td>
+                <td>friday</td>
+                <td>sunday</td>
+            </tr>
+            <tr>
+                <td>18:15-19:30</td>
+                <td colspan="4">spins & tricks</td>
+                
+            </tr>
+            <tr>
+                <td>19:30-21:00</td>
+                <td colspan="2">exotic pole dance</td>
+                <td>stretching</td>
+                <td>exotic pole dance</td>
+                </tr>
+    </table> 
+</tbody>
+  </div>
+  <div class="right">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5pfCZ2CgedQR_AvDyVRzfHTmMZzGLXyEvOqb8b3eXJ3NPDQ/viewform?embedded=true" width="500" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</div>
+</div>
+    <!-- contacts section -->
+    
+    <div class="contacts" id="contacts_section">
+        <div id="map"></div>
+        <div class="right2">
+<ul id="contacts_list">
+    <li><i class="fa fa-map-o" style="font-size:24px"></i> Latvia, Riga, Ezermalas street 25</li>
+    <br>
+    <li><i class="fa fa-mobile-phone" style="font-size:24px"></i>   +371 12345678</li>
+    <br>
+    <li><i class="fa fa-envelope-o" style="font-size:24px"></i> pole@pole.com</li>
+
+</ul>
+    </div>
+    </div>
+
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.10/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.10/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>
